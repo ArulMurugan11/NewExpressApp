@@ -20,6 +20,10 @@ module.exports = (sequelize, Sequelize) => {
         mob: {
             type: Sequelize.STRING
         }
+    }, {
+        timestamps: true,
+        underscored: true,
+        tableName: 'users',
     });
 
     return User;

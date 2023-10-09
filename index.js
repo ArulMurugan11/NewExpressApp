@@ -3,6 +3,7 @@ const cors = require("cors");
 require('dotenv').config();
 const app = express();
 const usersRouter = require("./src/routes/userRouter");
+const tutorialRouter = require("./src/routes/tutorialRouter");
 var corsOptions = {
   origin: "http://localhost:8081"
 };
@@ -35,8 +36,8 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
 });
 
-require("./src/routes/turorial.routes")(app);
 app.use("/users", usersRouter);
+app.use("/tutorial", tutorialRouter);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

@@ -9,6 +9,10 @@ module.exports = (sequelize, Sequelize) => {
     published: {
       type: Sequelize.BOOLEAN
     }
+  }, {
+    timestamps: true,
+    underscored: true,
+    tableName: 'tutorials',
   });
 
   return Tutorial;

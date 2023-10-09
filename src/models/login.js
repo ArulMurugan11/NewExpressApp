@@ -17,7 +17,7 @@ module.exports = function loginSchema(sequelize, DataType) {
     }, {
         timestamps: true,
         underscored: true,
-        tableName: 'login',
+        tableName: 'logins',
     });
     Login.associate = function mapRelation() {
     };

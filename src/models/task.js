@@ -17,7 +17,7 @@ module.exports = function taskSchema(sequelize, DataType) {
     }, {
         timestamps: true,
         underscored: true,
-        tableName: 'task',
+        tableName: 'tasks',
     });
     Task.associate = function mapRelation() {
     };
