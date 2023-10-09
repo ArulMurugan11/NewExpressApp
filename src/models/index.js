@@ -20,6 +20,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.tutorials = require("./tutorial.js")(sequelize, Sequelize);
+db.users = require("./user.js")(sequelize, Sequelize);
 db.logins = require("./login.js")(sequelize, Sequelize);
 db.tasks = require("./task.js")(sequelize, Sequelize);
 
