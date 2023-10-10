@@ -31,10 +31,6 @@ db.sequelize.sync()
 //   console.log("Drop and re-sync db.");
 // });
 
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
-});
 
 app.use("/users", usersRouter);
 app.use("/tutorial", tutorialRouter);
